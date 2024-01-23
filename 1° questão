@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, sum = 0, x;
+    float avg;
+
+    printf("Digite o número de valores a serem inseridos: ");
+    scanf("%d", &n);
+
+    for (i = 0; i < n; i++) {
+        printf("Digite um valor: ");
+        scanf("%d", &x);
+        sum += x;
+    }
+
+    avg = (float) sum / n;
+
+    printf("A soma dos valores é %d e a média é %.2f\n", sum, avg);
+
+    return 0;
+}
